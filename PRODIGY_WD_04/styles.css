@@ -1,0 +1,169 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 30px;
+}
+
+.navbar {
+    background: #111;
+    padding: 3rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+    color: #00bcd4;
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+    text-align: center;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-section,
+.projects-section,
+.contact-section {
+    padding: 2rem 0;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p,
+.projects-section p,
+.contact-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-item {
+    background: #282828;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.project-item h3 {
+    margin-bottom: 1rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 2rem auto;
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+    border-radius: 10px;
+}
+
+.cell {
+    width: calc(33.333% - 10px);
+    height: 100px;
+    margin: 5px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: #00bcd4;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #00bcd4;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background: #0097a7;
+}
